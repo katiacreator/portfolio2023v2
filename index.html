@@ -3,98 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-	<meta charset="UTF-8">
-	<title>Cube 3d</title>
-	<!-- This is a codepen by Dmitri b. chiefman -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Portfolio</li>
+        <li>Resume</li>
+      </ul>
+    </nav>
+    <main class="container">
+      <section id="section-1" class="section home">
+        <h1 class="heading" id="name">Lorem, ipsum dolor.</h1>
+        <h2 class="heading" id="job-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, illo!</h2>
+        <button class="btn" id="enter-button">Enter</button>
+      </section>
+      <section id="section-2" class="section">
+        <h1 id="about-heading" class="heading" >About Me</h1>
+        <div class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta hic omnis consequatur ratione eos ipsam sequi delectus tenetur ad molestiae doloremque expedita, nobis minus, possimus voluptas repellendus. Iure nobis, magnam repellendus dolor eaque tempore et esse! Ullam qui velit blanditiis rerum, error minima placeat fuga magni voluptatibus explicabo, a facere?</div>
+        <br>
+        <img src="#" alt="self-portrait of Katia Gibson, a Black person smiling with medium-length bluish-black hair and purple glasses">
+        <br>
+        <div class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta hic omnis consequatur ratione eos ipsam sequi delectus tenetur ad molestiae doloremque expedita, nobis minus, possimus voluptas repellendus. Iure nobis, magnam repellendus dolor eaque tempore et esse! Ullam qui velit blanditiis rerum, error minima placeat fuga magni voluptatibus explicabo, a facere?</div>
+        <br>
+        <div class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta hic omnis consequatur ratione eos ipsam sequi delectus tenetur ad molestiae doloremque expedita, nobis minus, possimus voluptas repellendus. Iure nobis, magnam repellendus dolor eaque tempore et esse! Ullam qui velit blanditiis rerum, error minima placeat fuga magni voluptatibus explicabo, a facere?</div>
+      </section>
+      <section id="section-3" class="section apps">
+        <h1 id="apps-heading" class="heading">Web Apps I've Built</h1>
+        <section id="featured-card-container" class="card-section">
+          <h2 id="featured-apps-section" class="heading">Featured</h3>
+          <div class="card">Card One</div>
+          <div class="card">Card Two</div>
+          <div class="card">Card Three</div>
+        </section>
+        <section id="others-card-container" class="card-section">
+          <h2 id="other-apps" class="heading">Other Apps</h3>
+          <div class="card">Card One</div>
+          <div class="card">Card Two</div>
+          <div class="card">Card Three</div>
+        </section>
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300|Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-
-
-</head>
-<body>
-	    <div class="wrap">
-        <div class="wrap-inner">
-		      <div class="container-box">		    
-			
-        <div class="box" id="b1">
-          <div class="wall-1"></div>
-          <div class="wall-2"></div>
-          <div class="wall-3"></div>
-          <div class="wall-4"> </div>
-          <div class="wall-5">
-            <span class="box-logo">90%</span>
+      </section>
+      <br>
+      <!-- <section id="section-4" class="section photography">
+        <section id="photography-heading" class="heading">Photography Portfolio</section>
+      </section> -->
+      <section id="section-5" class="section">
+        <section id="resume">
+          Resume
+          <button class="btn" id="resume-btn">Download Resume</button>
+        </section>
+        <div class="contact-wrapper">
+          <div class="contact-details">
+            <div class="email">
+              <i class="far fa-envelope"></i>
+              <h3>Email</h3>
+              <p>lorem@gmail.com</p>
+            </div>
           </div>
-          <div class="wall-6">
-            <span class="box-logo">Box1</span>
-          </div>
-
-          <p class="info">HTML5 | JADE | Bootstrap <br> Валидация | Адаптивность под различные устройства и разрешения</p>
-        </div>			
-				
-        <div class="box" id="b2">
-          <div class="wall-1"></div>
-          <div class="wall-2"></div>
-          <div class="wall-3"></div>
-          <div class="wall-4">
-
-          </div>
-          <div class="wall-5">
-            <span class="box-logo pers">95%</span>
-          </div>
-          <div class="wall-6">
-            <span class="box-logo">Box2</span>
-          </div>	
-          <p class="info">css3 | sass | sass compass </p>			
+          <h1>Let's Chat</h1>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Pronouns">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn">
+              <input type="submit" value="Send Message">
+            </button>
+          </form>
         </div>
-
-        <div class="box" id="b3">
-          <div class="wall-1"></div>
-          <div class="wall-2"></div>
-          <div class="wall-3"></div>
-          <div class="wall-4">
-
-          </div>
-          <div class="wall-5">
-            <span class="box-logo">80%</span>
-          </div>
-          <div class="wall-6">
-            <span class="box-logo">Box3</span>
-          </div>
-
-          <p class="info">jQuery Ui</p>
-        </div>		
-
-			        <div class="box" id="b4">
-          <div class="wall-1"></div>
-          <div class="wall-2"></div>
-          <div class="wall-3"></div>
-          <div class="wall-4"></div>
-          <div class="wall-5">
-            <span class="box-logo">65%</span>
-          </div>
-          <div class="wall-6">
-            <span class="box-logo">Box5</span>
-          </div>
-            <p class="info">svg</p>
+      </section>
+      <footer id="footer">
+        <!-- Random quote section -->
+        <quote id="quote">
+          Lorem ipsum dolor sit amet.
+        </quote>
+        <!-- Copyright notice -->
+        <h3 id="footer-heading" class="heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, eos!</h3>
+        <div class="social-icons">
+          <i class="far fa-envelope"></i>
+          <button id="icons" class="btn">
+            <p class="paragraph">Github</p>
+          </button>
+          <i class="far fa-envelope"></i>
+          <button id="icons" class="btn">
+            <p class="paragraph">Linkedin</p>
+          </button>
         </div>
+      </footer>
 
-			        <div class="box" id="b5">
-          <div class="wall-1"></div>
-          <div class="wall-2"></div>
-          <div class="wall-3"></div>
-          <div class="wall-4"></div>
-          <div class="wall-5">
-            <span class="box-logo">80%</span>
-          </div>
-          <div class="wall-6">
-            <span class="box-logo">Box6</span>
-          </div>
-				          <p class="info">Landing page design | Mock Up card | Ретушь фото </p>
-			        </div>	
-			
-		      </div>
-          </div>
-	    </div>
+    </main>
   </body>
 </html>
+
