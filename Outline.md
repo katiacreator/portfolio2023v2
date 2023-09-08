@@ -1,5 +1,5 @@
 # Project Outline-mobile/tablet screens
-### all mobile pages will be 1 col, tablet 2 col at most
+### all mobile pages will be 1 col, tablet 2 col, etc
 ### create site logo
 ### create landing page loading animation
 ### create hero section
