@@ -1,5 +1,70 @@
-#header{
+header{
     width: 100vw;
-    height: 4rem;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: var(--desktop);
+    background-color: var(--black);
     /* position: sticky; */
 }
+
+
+#brand-logo{
+    grid-column: 1/ span 6;
+    width: 80px;
+    height: 80px;
+    margin:10px; 
+    margin-top: 0;
+    color: white;
+}
+
+
+/* Studio Cyres */
+#brand-logo #brand-name{
+    font-family: 'Moirai One', cursive;
+    color: var(--silver);
+    letter-spacing: 3px;
+    line-height: var(--fsDouble);
+    font-size: var(--fsDouble);
+    font-weight: var(--fw700);
+    text-shadow: 1px 2px 2px var(--silver);
+    padding: var(--fsStandard);
+}
+
+#brand-logo:hover #brand-name{
+    color: var(--turquoise);
+    text-shadow: 1px 2px 2px var(--turquoise);
+}
+
+/* letter y span */
+
+#heart{
+    font-family: var(--ffMoirai);
+    font-size: var(--fsDouble); 
+    color: var(--turquoise);
+    text-shadow: 2px 2px 2px  var(--turquoise);
+}
+
+
+/* hamburger menu */
+#toggle-btn{
+    grid-column: 11/ span 1;
+    margin: 1.5rem 0 1.5rem 5.5rem; 
+    /* padding: var(--fsStandard); */
+}
+
+#toggle-btn i {
+    color: var(--silver);
+    font-size: var(--fsDouble);
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-btn i:hover{
+    color: var(--turquoise);
+}
+/* end hamburger menu */
