@@ -14,11 +14,25 @@
   html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: var(--ash);
   }
   
   img{
     width: 200px;
     height: 200px;
+  }
+
+  .section-heading{
+    font-family: var(--ffMoirai);
+    font-size: var(--fsTriple);
+    color: var(--white);
+  }
+
+  .section-heading::before, .section-heading::after{
+    content: '';
+    width: 10px;
+    height: 5px;
+    background-color: var(--white);
   }
 
   /* Root Variables */
@@ -34,7 +48,7 @@
     --fsHeading: 8rem;
     --double: repeat(2, 1fr);
     --tablet: repeat(3, 1fr);
-    --mobile: repeat(6, 1fr);
+    --mobile: repeat(5, 1fr);
     --desktop: repeat(12, 1fr);
     --silver: #aaa;
     --turquoise: turquoise;
@@ -48,17 +62,44 @@
 #main-container{
   display: grid;
   grid-template-rows: var(--mobile);
-  background-color: var(--ocean);
-  row-gap: .8rem;
-  height: calc(100% - 4rem);
+  row-gap: .5rem;
+  height: calc(100vh - 4rem);
 }
 
 section{
-  padding: var(--fsStandard);
+  background-color: var(--ash);
+  padding: 0 var(--fsStandard);
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(3){
+  height: 100%;
 }
 
 footer{
   width: 100vw;
+  height: calc(30vh - 4rem);
+  font-family: var(--ffInconsolata);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--silver);
+}
+
+footer p::before {
+  content: '\00a9';
+  color: var(--black);
+  font-size: 1.2rem;
+  padding-right: .3rem;
+  padding-top: .5rem;
 }
 
 
