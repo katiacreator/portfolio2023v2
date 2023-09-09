@@ -26,6 +26,8 @@
     font-family: var(--ffMoirai);
     font-size: var(--fsTriple);
     color: var(--white);
+    margin-top: 7rem;
+    border-bottom: solid 1px var(--white);
   }
 
   .section-heading::before, .section-heading::after{
