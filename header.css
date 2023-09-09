@@ -4,6 +4,7 @@ section.header{
     grid-template-columns: var(--desktop);
     background-color: var(--black); 
     height: 7rem;
+    border-bottom: solid 1px var(--white);
 }
 
 section.header .brand-logo{

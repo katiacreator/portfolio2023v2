@@ -1,9 +1,98 @@
+#section-1{
+  
+    margin-top: 4rem;
+    height: calc(100% - 7rem);
+}
 
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.name-title h1{
+    font-family: var(--ffRalewayDots);
+    font-size: 1.5rem;
+    font-weight: var(--fw500);
+    color: var(--white);
+    line-height: var(--fsDouble);
+    text-align: left;
+}
+
+/* letter S */
+.name-title h1::first-letter{
+    font-size: 5.5rem;
+    font-family: var(--ffBigShoulders);
+    font-weight: var(--fw500);
+    color: var(--turquoise);
+    padding-right: .5rem;
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+    
+  }
+  
+  .name-title h1 span{
+    color: var(--turquoise);
+    font-size: 1.5rem;
+  }
+
+  /* add symbols */
+  .name-title span{
+    color: var(--turquoise);
+    font-family: var(--ffRaleway);
+    font-weight: var(--fw700);
+  }
+  /* second paragraph */
+  .name-title h2{
+    font-family: var(--ffRaleway);
+    font-size: var(--fsStandard);
+    font-weight: var(--fw400);
+    padding: var(--fsStandard) 0;
+    padding-bottom: var(--fsDouble);
+    line-height: 1.8rem;
+    text-align: left;
+    color: var(--silver);
+  }
+  /* brand name */
+  .name-title h2 span.brand{
+    color: var(--turquoise);
+    font-size: var(--fsDouble);
+    font-family: var(--ffRaleway);
+    font-weight: var(--fw500);
+    letter-spacing: .1rem;
+  }
+  
+  
+  /* view portfolio btn */
+  .name-title a{
+    text-decoration: none;
+    background-color: var(--turquoise);
+    border-radius: .5rem;
+    border: solid 1px var(--turquoise);
+    padding: .4rem;
+    box-shadow: 0 8px 8px var(--black);
+    letter-spacing: .1rem;
+    font-family: var(--ffInconsolata);
+    font-weight: var(--fw700);
+    color: var(--black);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .name-title a:hover{
+    background-color: var(--ash);
+    color: var(--turquoise);
+    box-shadow: 0 3px 5px var(--turquoise);
+  }
+  
 
 /* Media Queries */
 @media screen and (min-width: 768px){
-    #section-1{
+    #section-1 #hero{
         display: grid;
         grid-template-columns: var(--double);
     } 
