@@ -1,25 +1,21 @@
-header{
+section.header{
     width: 100vw;
-    height: 6rem;
     display: grid;
     grid-template-columns: var(--desktop);
-    background-color: var(--black);
-    /* position: sticky; */
+    background-color: var(--black); 
+    height: 100px;
 }
-
-
-#brand-logo{
+section.header .brand-logo{
     grid-column: 1/ span 6;
     width: 80px;
     height: 80px;
     margin:10px; 
     margin-top: 0;
-    color: white;
 }
 
 
 /* Studio Cyres */
-#brand-logo #brand-name{
+.brand-logo .brand-name{
     font-family: 'Moirai One', cursive;
     color: var(--silver);
     letter-spacing: 3px;
@@ -30,14 +26,13 @@ header{
     padding: var(--fsStandard);
 }
 
-#brand-logo:hover #brand-name{
+.brand-logo:hover .brand-name{
     color: var(--turquoise);
     text-shadow: 1px 2px 2px var(--turquoise);
 }
 
 /* letter y span */
-
-#heart{
+.heart{
     font-family: var(--ffMoirai);
     font-size: var(--fsDouble); 
     color: var(--turquoise);
@@ -46,25 +41,84 @@ header{
 
 
 /* hamburger menu */
-#toggle-btn{
+section.header .toggle-btn{
     grid-column: 11/ span 1;
     margin: 1.5rem 0 1.5rem 5.5rem; 
-    /* padding: var(--fsStandard); */
+    padding: var(--fsStandard);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#toggle-btn i {
+section.header .toggle-btn i {
+    /* background-color: var(--white); */
     color: var(--silver);
     font-size: var(--fsDouble);
     text-align: center;
     height: 50px;
     width: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#toggle-btn i:hover{
-    color: var(--turquoise);
+    /* border: red solid 2px;; */
 }
 /* end hamburger menu */
+.header-nav{
+    display: none;
+}
+/** MEDIA QUERIES FOR LARGER SCREENS **/
+
+/* TABLET MEDIUM SCREENS */
+@media (min-width: 768px) {
+    
+}
+
+/* DESKTOP LRG SCREENS */
+@media (min-width: 768px) {
+    .header-nav{
+        cursor: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: var(--fsStandard);
+    }
+    
+    .toggle-btn i{
+        display: none;
+    }
+    
+    .header-nav a{
+        margin: .5rem;
+        letter-spacing: .1rem;
+        font-size: 1.5rem;
+        font-family: var(--ffRalewayDots);
+        font-weight: var(--fw700);
+        color: var(--silver);
+        text-decoration: none;
+        scale: .8;
+        transition: 0.25s;
+        cursor: default;
+    }
+    
+    
+    .header-nav a:hover{
+        scale: 1;
+        color: var(--turquoise);
+    }
+    
+    .header-nav a span 
+    {
+        position: relative;
+        font-size: 1.5rem;
+	    letter-spacing: 0.05em;
+	    transition: 0.25s;
+	    text-transform: uppercase;
+}
+.header-nav:hover a span 
+{
+	color: var(--turquoise);
+	text-shadow: 0 0 5px var(--turquoise),
+	0 0 15px var(--turquoise),
+	0 0 30px var(--turquoise),
+	0 0 60px var(--turquoise),
+	0 0 100px var(--turquoise);
+}
+}
