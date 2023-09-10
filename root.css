@@ -31,12 +31,12 @@
     /* border-bottom: solid 1px var(--white); */
   }
 
-  .section-heading::before, .section-heading::after{
+  /* .section-heading::before, .section-heading::after{
     content: '';
     width: 35px;
     height: 2px;
     background-color: var(--white);
-  }
+  } */
 
   /* Root Variables */
   :root{  
@@ -65,7 +65,6 @@
 #main-container{
   display: grid;
   grid-template-rows: var(--mobile);
-  /* row-gap: .5rem; */
   height: calc(100vh - 7rem);
 }
 
