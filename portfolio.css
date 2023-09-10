@@ -1,13 +1,17 @@
 #section-3{
     background-color: var(--black);
     /* padding: 0 var(--fsDouble) var(--fsTriple) var(--fsDouble); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100%;
     padding-bottom: var(--fsTriple);
 }
 
 #projects-container{
-    width: 100vw;
+    margin-left: .8rem;
 }
 
 .project-card .card-heading{
