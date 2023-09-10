@@ -6,6 +6,7 @@
 #section-4 #resume-container{
     padding-left: var(--fsDouble);
     padding-right: var(--fsStandard);
+    padding-bottom: var(--fsStandard);
 }
 
 #resume-container div{
@@ -39,6 +40,49 @@
 }
 
 
+@media screen and (min-width: 768px) {
+    #resume-container{
+        display: grid;
+        gap: var(--fsStandard);
+        grid-template-areas: 
+        'rh rh'
+        'rs rs'
+        'ts ph'
+        'wh edu';
+    }
 
+    #resume-heading{
+        grid-area: rh;
+        border-bottom: solid 1px var(--silver);
+    }
+    #resume-summary{
+        grid-area: rs;
+        padding-top: var(--fsStandard);
+    }
+    #tech-skills{
+        grid-area: ts;
+    }
+
+    #projects-history{
+        grid-area: ph;
+    }
+
+    #work-history{
+        grid-area: wh;
+    }
+
+    #education{
+        grid-area: edu;
+    }
+
+    #resume-container div h3{
+        font-size: var(--fsStandard);
+        padding-bottom: .5rem;
+    }
+    #resume-container div p{
+        font-size: var(--fsStandard);
+        padding-bottom: .5rem;
+    }
+}
 
 
