@@ -26,14 +26,15 @@
     font-family: var(--ffMoirai);
     font-size: var(--fsTriple);
     color: var(--white);
-    margin-top: 7rem;
-    border-bottom: solid 1px var(--white);
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+    /* border-bottom: solid 1px var(--white); */
   }
 
   .section-heading::before, .section-heading::after{
     content: '';
-    width: 10px;
-    height: 5px;
+    width: 35px;
+    height: 2px;
     background-color: var(--white);
   }
 
@@ -64,22 +65,16 @@
 #main-container{
   display: grid;
   grid-template-rows: var(--mobile);
-  row-gap: .5rem;
+  /* row-gap: .5rem; */
   height: calc(100vh - 7rem);
 }
 
-section{
-  background-color: var(--ash);
-  padding: 0 var(--fsStandard);
-  height: calc(100vh - 7rem);
+#main-container section{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-section:nth-child(3){
-  height: 100%;
+  border: solid red 2px;
 }
 
 footer{
