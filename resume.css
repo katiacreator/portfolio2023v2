@@ -1,16 +1,43 @@
 #section-4{
-    margin: var(--fsStandard);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--ocean);
+    padding-bottom: var(--fsTriple);
 }
 
-#section-4 div{
+#section-4 div:not(:first-child){
     padding: var(--fsStandard);
 }
 
-#download-btn{
+#resume-heading{
+  border-bottom: solid 4px var(--black);
+  width: 100vw;
+}
+
+#resume-heading h1{
+  font-family: var(--RalewayDots);
+  font-size: var(--fsDouble);
+}
+
+.job span, .project span, .school span{
+  font-weight: bold;
+}
+
+#resume-heading .website{
+  color: var(--white);
+}
+
+.job, .school, .project, .summary{
+  padding: var(--fsStandard);
+}
+
+#tech-skills{
+  width: 100vw;
+}
+
+#tech-skills p{
+  margin-left: 1rem;
+}
+
+.btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +59,7 @@
     align-items: center;
   }
   
-  #download-btn:hover{
+  .btn:hover{
     background-color: var(--ash);
     color: var(--turquoise);
     box-shadow: 0 3px 5px var(--turquoise);
