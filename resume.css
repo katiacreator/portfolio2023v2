@@ -1,0 +1,23 @@
+#section-4{
+    background-color: var(--ocean);
+}
+
+#section-4 #resume-container{
+    padding-left: var(--fsDouble);
+    padding-right: var(--fsStandard);
+}
+
+#resume-container div{
+    padding-bottom: var(--fsStandard);
+}
+
+#resume-heading h1{
+    font-size: var(--fsDouble);
+}
+
+#resume-heading .website{
+    color: var(--white);
+}
+
+
+
