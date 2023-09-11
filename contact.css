@@ -1,3 +1,91 @@
+#section-5{
+  background-color: var(--ash);
+  width: 100vw;
+  height: 100%;
+  padding-top: var(--fsDouble);
+}
+
+.contact-info p{
+    font-family: var(--ffRalewayDots);
+    font-size: var(--fsStandard);
+    color: var(--white);
+    text-align: center;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+}
+  
+.contact-info .contact-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+  
+.contact-icons i{
+    padding: 2px;
+    color: var(--silver);
+    font-size: var(--fsDouble);
+    scale: .8;
+    transition: rotate 900ms ease;
+}
+  
+.contact-icons i:hover{
+    scale: 1;
+    color: var(--turquoise)
+}
+  
+.contact-form{
+    margin-top: -1.5rem;
+    margin-bottom: .5rem; 
+    font-family: var(--ffRaleway);
+}
+  
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .7rem;
+    padding: 1.5rem;
+}
+
+.contact-form .label{
+  padding: .5rem 0;
+  color: var(--turquoise);
+}
+
+input,textarea{
+  width: 80vw;
+  margin-right: 10px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  background-color: #aaa;
+  border: none;
+  border-bottom: solid var(--turquoise) 1px;
+  padding: .3rem;
+  resize: none;
+}
+
+input:hover, textarea:hover{
+  background-color: var(--turquoise);
+}
+
+input::placeholder,
+textarea::placeholder{
+  font-family: var(--ffRaleway);
+  color: var(--black);
+}
+
+textarea::placeholder{
+  padding-top: .2rem;
+  padding-left: .2rem;
+}
+
+input.btn:hover{
+  background-color: var(--turquoise);
+}
+
+
 /* Media Queries */
 @media screen and (min-width: 768px){
     #contact{
