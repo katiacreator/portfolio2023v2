@@ -1,9 +1,9 @@
 #section-4{
-    background-color: red;
+    background-color: var(--ocean);
     padding-bottom: var(--fsTriple);
 }
 
-#section-4 #resume-container{
+#resume-container{
     padding-left: var(--fsDouble);
     padding-right: var(--fsStandard);
     padding-bottom: var(--fsStandard);
@@ -23,9 +23,9 @@
 
 #download-btn{
     text-decoration: none;
-    background-color: var(--turquoise);
+    background-color: var(--silver);
     border-radius: .5rem;
-    border: solid 1px var(--turquoise);
+    border: solid 1px var(--silver);
     padding: .4rem;
     box-shadow: 0 8px 8px var(--black);
     letter-spacing: .1rem;
@@ -39,6 +39,11 @@
     align-items: center;
 }
 
+#download-btn:hover{
+    background-color: var(--ash);
+    color: var(--silver);
+    box-shadow: 0 3px 5px var(--silver);
+}
 
 @media screen and (min-width: 768px) {
     #resume-container{
@@ -84,5 +89,3 @@
         padding-bottom: .5rem;
     }
 }
-
-
