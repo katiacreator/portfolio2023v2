@@ -9,22 +9,33 @@ section.header{
 
 section.header .brand-logo{
     grid-column: 1/ span 6;
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
     margin-left: var(--fsDouble);
     padding: var(--fsStandard);
+    border: double 4px var(--white);
+    border-radius: 50%;
+    position: absolute;
+    left: -60px;
+    top: -40px;
+    background-color: var(--black);
 }
 
 
 /* Studio Cyres */
 .brand-logo .brand-name{
+    rotate: -25deg;
     font-family: 'Moirai One', cursive;
     color: var(--silver);
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
     line-height: var(--fsDouble);
     font-size: var(--fsDouble);
     font-weight: 700;
     text-shadow: 1px 2px 2px var(--silver);
+    position: absolute;
+    top: 60px;
+    left: 35px;
+    
 }
 
 .brand-logo:hover .brand-name{
