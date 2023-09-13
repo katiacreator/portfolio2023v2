@@ -52,6 +52,7 @@
     --double: repeat(2, 1fr);
     --tablet: repeat(3, 1fr);
     --mobile: repeat(5, 1fr);
+    --mobile6: repeat(6, 1fr);
     --desktop: repeat(12, 1fr);
     --silver: #aaa;
     --turquoise: turquoise;
