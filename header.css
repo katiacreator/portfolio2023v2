@@ -9,32 +9,23 @@ section.header{
 
 section.header .brand-logo{
     grid-column: 1/ span 6;
-    width: 200px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
     margin-left: var(--fsDouble);
     padding: var(--fsStandard);
-    border: double 4px var(--white);
-    border-radius: 50%;
-    position: absolute;
-    left: -60px;
-    top: -40px;
-    background-color: var(--black);
 }
 
 
 /* Studio Cyres */
 .brand-logo .brand-name{
-    rotate: -25deg;
-    font-family: 'Moirai One', cursive;
-    color: var(--silver);
-    letter-spacing: .3rem;
-    line-height: var(--fsDouble);
+    font-family: var(--ffMoirai);
     font-size: var(--fsDouble);
+    color: var(--silver);
+    letter-spacing: 3px;
+    line-height: var(--fsDouble);
     font-weight: 700;
     text-shadow: 1px 2px 2px var(--silver);
-    position: absolute;
-    top: 60px;
-    left: 35px;
+    
     
 }
 
@@ -47,8 +38,8 @@ section.header .brand-logo{
 .heart{
     font-family: var(--ffMoirai);
     font-size: var(--fsDouble); 
-    color: var(--turquoise);
-    text-shadow: 2px 2px 2px  var(--turquoise);
+    color: var(--salmon);
+    text-shadow: 2px 2px 2px  var(--salmon);
 }
 
 
@@ -63,13 +54,12 @@ section.header .toggle-btn{
 }
 
 section.header .toggle-btn i {
-    /* background-color: var(--white); */
     color: var(--silver);
     font-size: var(--fsDouble);
     text-align: center;
     height: 50px;
     width: 50px;
-    /* border: red solid 2px;; */
+    
 }
 /* end hamburger menu */
 .header-nav{
@@ -79,6 +69,27 @@ section.header .toggle-btn i {
 
 /* TABLET MEDIUM SCREENS */
 @media (min-width: 768px) {
+    section.header .brand-logo{
+        width: 200px;
+        height: 200px;
+        border: double 4px var(--white);
+        border-radius: 50%;
+        position: absolute;
+        left: -60px;
+        top: -40px;
+        background-color: var(--black);
+    }
+    
+    .brand-logo .brand-name{
+        font-size: var(--fsDouble);
+        position: absolute;
+        top: 60px;
+        left: 35px;
+        rotate: -25deg;
+    }
+
+}
+@media screen and (min-width: 900px) {
     .header-nav{
         cursor: none;
         display: flex;
@@ -93,22 +104,26 @@ section.header .toggle-btn i {
     }
     
     .header-nav a{
-        margin: .5rem;
+        margin: .8rem;
         letter-spacing: .1rem;
         font-size: 1.5rem;
-        font-family: var(--ffRalewayDots);
+        font-family: var(--ffRaleway);
         font-weight: var(--fw700);
-        color: var(--silver);
+        color: var(--white);
         text-decoration: none;
-        scale: .8;
+        scale: 1;
         transition: 0.25s;
         cursor: default;
+        text-shadow: 2px 2px 2px  var(--white);
+
     }
     
     
     .header-nav a:hover{
-        scale: 1;
+        scale: 1.2;
         color: var(--turquoise);
+        text-shadow: 2px 2px 2px  var(--turquoise);
+
     }
     
     .header-nav a span 
