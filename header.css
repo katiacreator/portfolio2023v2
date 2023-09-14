@@ -13,6 +13,11 @@ section.header .brand-logo{
     height: 80px;
     margin-left: var(--fsDouble);
     padding: var(--fsStandard);
+    transition: rotate .5s;
+}
+
+section.header .brand-logo:hover{
+    rotate: 360deg;
 }
 
 
@@ -24,9 +29,7 @@ section.header .brand-logo{
     letter-spacing: 3px;
     line-height: var(--fsDouble);
     font-weight: 700;
-    text-shadow: 1px 2px 2px var(--silver);
-    
-    
+    text-shadow: 1px 2px 2px var(--silver);     
 }
 
 .brand-logo:hover .brand-name{
