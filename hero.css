@@ -1,87 +1,47 @@
 section#section-1{
   height: calc(100% - 7rem);
-  width: 99vw;
-  display: grid;
-  grid-template-columns: var(--tablet);
-  grid-template-rows: var(--mobile);
-  gap: var(--fsStandard);
-  margin-right: var(--fsStandard);
-  margin-top: var(--fsDouble);
+  width: 97vw;
+  margin-right: var(--fsDouble);
 }
 
 #hero{
-  grid-column: 1/ span 3;
-  grid-row: 1/ span 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 var(--fsDouble) var(--fsTriple) var(--fsDouble);
+  margin-top: 6rem;
+
 }
 
 img{
   object-fit: cover;
   width: 100%;
-
 }
 
-.img1{
-  background-color: gold;
-  grid-column: 1/ span 3;
-  grid-row: 4/ span 2;
-  width: 100%;
-  height: 100%;
-}
-.img2{
-  background-color: purple;
 
+.img1, .img2, .img3, .img4, .img6, .img7, .img8{
+  background-color: var(--ash);
 }
-.img3{
-background-color: crimson;
-
-}
-.img4{
-background-color: gold;
-
-}
-.img5{
-background-color: purple;
-
-}
-.img6{
-background-color: crimson;
-
-}
-.img7{
-background-color: gold;
-
-}
-.img8{
-background-color: crimson;
-
-}
-
-.img2, .img3, .img4, .img5, .img6, .img7, .img8{
+.img1, .img2, .img3, .img4, .img6, .img7, .img8{
   display: none;
 }
 
 .name-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .name-title h1{
-      font-family: var(--ffRalewayDots);
-      font-size: var(--fsDouble);
-      font-weight: var(--fw500);
-      color: var(--white);
-      line-height: 2.5rem;
-      text-align: left;
-      /* margin: 0;
-      padding: 3rem; */
-  }
+  font-family: var(--ffRalewayDots);
+  font-size: var(--fsDouble);
+  font-weight: var(--fw500);
+  color: var(--white);
+  line-height: 2.5rem;
+  text-align: left;
+}
   
   /* letter S */
 .name-title h1::first-letter{
@@ -93,19 +53,19 @@ background-color: crimson;
       -webkit-initial-letter: 3;
       initial-letter: 3;
       
-    }
+}
     
 .name-title h1 span{
       color: var(--turquoise);
       font-size: 1.5rem;
-    }
+}
   
     /* add symbols */
 .name-title span{
       color: var(--turquoise);
       font-family: var(--ffRaleway);
       font-weight: var(--fw700);
-    }
+}
     /* second paragraph */
 .name-title h2{
       font-family: var(--ffRaleway);
@@ -117,7 +77,7 @@ background-color: crimson;
       text-align: left;
       color: var(--silver);
 
-    }
+}
     /* brand name */
 .name-title h2 span.brand{
       color: var(--turquoise);
@@ -125,7 +85,7 @@ background-color: crimson;
       font-family: var(--ffRaleway);
       font-weight: var(--fw500);
       letter-spacing: .1rem;
-    }
+}
     
     
     /* view portfolio btn */
@@ -145,16 +105,17 @@ background-color: crimson;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
+}
     
 .name-title a:hover{
       background-color: var(--ash);
       color: var(--turquoise);
       box-shadow: 0 3px 5px var(--turquoise);
-    }
+}
 /* TABLET SCREENS */
 @media screen and (min-width: 768px) {
 section#section-1{
+    display: grid;
     grid-template-columns: var(--mobile6);
     grid-template-rows: var(--mobile);
     gap: .5rem;
@@ -167,50 +128,51 @@ article#hero{
     padding: 0 var(--fsDouble) var(--fsTriple) var(--fsDouble);
 }
 
-.img2, .img3, .img4, .img5, .img6, .img7, .img8{
-  display: block;
-}
-
 #section-1 div:not(:first-child){
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  scale: .9;
+}
+
+.img1, .img2, .img3, .img4, .img6, .img7, .img8{
+  display: block;
+  /* border: solid 2px var(--turquoise); */
+}
+
+#section-1 div:not(:first-child):hover{
+  scale: .95;
 }
 
 .img1{
-  background-color: gold;
   grid-column: 4/ span 1;
   grid-row: 1/ span 1;
 }
 
 .img2{
-  background-color: purple;
   grid-column: 5/ span 2;
 }
 .img3{
-background-color: crimson;
-grid-column: 4/ span 3;
+  grid-column: 4/ span 3;
 }
 .img4{
-background-color: gold;
-grid-column: 4/ span 2;
+  grid-column: 4/ span 3;
 }
-.img5{
-background-color: purple;
-}
+
 .img6{
-background-color: crimson;
-grid-column: 4/ span 3;
-grid-row: 4/ span 2;
+  grid-column: 4/ span 3;
+  grid-row: 4/ span 2;
+}
+
+.img6 img{
+  height: 400px;
 }
 .img7{
-background-color: gold;
-grid-column: 1/ span 2;
-grid-row: 4/ span 1;
+  grid-column: 1/ span 2;
+  grid-row: 4/ span 1;
 }
 .img8{
-background-color: crimson;
-grid-column: 2/ span 2;
-grid-row: 5/ span 1;
+  grid-column: 2/ span 2;
+  grid-row: 5/ span 1;
 }
 
 .name-title h1{
