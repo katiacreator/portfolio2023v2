@@ -8,28 +8,28 @@ section.header{
 }
 
 section.header .brand-logo{
-    grid-column: 1/ span 6;
-    width: 80px;
-    height: 80px;
-    margin-left: var(--fsDouble);
+    grid-column: 1/ span 4;
+    width: 60px;
+    height: 60px;
+    margin-left: var(--fsStandard);
     padding: var(--fsStandard);
-    transition: rotate .5s;
+    text-align: center;
 }
 
-section.header .brand-logo:hover{
+/* section.header .brand-logo:hover{
     rotate: 360deg;
-}
+} */
 
 
 /* Studio Cyres */
 .brand-logo .brand-name{
     font-family: var(--ffMoirai);
-    font-size: var(--fsDouble);
+    font-size: 1.8rem;
     color: var(--silver);
     letter-spacing: 3px;
     line-height: var(--fsDouble);
     font-weight: 700;
-    text-shadow: 1px 2px 2px var(--silver);     
+    text-shadow: 1px 2px 2px var(--silver);    
 }
 
 .brand-logo:hover .brand-name{
